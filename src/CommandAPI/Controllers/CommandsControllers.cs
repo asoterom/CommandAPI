@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.JsonPatch;
 
 namespace CommandAPI.Controllers
 {
-    /*controllers de api*/
+    //ramdon change
     [Route("api/[controller]")]
     [ApiController]
     public class CommandsController : ControllerBase
