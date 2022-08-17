@@ -246,7 +246,7 @@ namespace CommandAPI.Tests
             var result = controller.CreateCommand(new CommandCreateDto{});
             
             // Assert
-            Assert.IsType<CreatedAtActionResult>(result.Result);
+            Assert.IsType<CreatedAtRouteResult>(result.Result);
         }
         [Fact]
         public void UpdateCommand_Return204NoContent_WhenValidObjectSubmitted()
