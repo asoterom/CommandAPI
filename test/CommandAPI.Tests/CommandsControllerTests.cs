@@ -241,7 +241,7 @@ namespace CommandAPI.Tests
             var controller = new CommandsController(_mockRepo.Object,_mapper);
 
         
-            // Act
+            // Actcd..
         
             var result = controller.CreateCommand(new CommandCreateDto{});
             

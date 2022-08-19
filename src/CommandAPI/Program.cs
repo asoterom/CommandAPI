@@ -33,6 +33,9 @@ builder.Services.AddScoped<ICommandAPIRepo,SQLCommandAPIRepo>();
 
 var app = builder.Build();
 
+CommandContext dbcontext = app.Services.GetRequiredService<CommandContext>();
+dbcontext.Database.Migrate();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
