@@ -33,13 +33,13 @@ builder.Services.AddScoped<ICommandAPIRepo,SQLCommandAPIRepo>();
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
+//using (var scope = app.Services.CreateScope())
+//{
+//    var services = scope.ServiceProvider;
 
-    var context = services.GetRequiredService<CommandContext>();    
-    context.Database.Migrate();
-}
+//    var context = services.GetRequiredService<CommandContext>();    
+//    context.Database.Migrate();
+//}
 
 
 if (app.Environment.IsDevelopment())
